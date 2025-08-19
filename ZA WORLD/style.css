@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #000000, #1a1a2e, #3f0071);
+  color: white;
+  font-family: 'Impact', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: background 0.5s ease;
+}
+
+.container {
+  text-align: center;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.title {
+  font-size: 4rem;
+  color: #ff00aa;
+  text-shadow: 0 0 10px #ff00aa, 0 0 20px #ff00aa, 0 0 30px #ff00aa;
+  animation: pulse 2s infinite;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #cccccc;
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+  color: #ffd700;
+  transform: rotate(-8deg);
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+}
+
+.dio_au {
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 0, 234, 0.6);
+  background-color: rgba(230, 100, 200);
+  border: none;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #ff00aa, 0 0 20px #ff00aa;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff00aa, 0 0 40px #ff00aa;
+  }
+}
+
+/* Visual Effects */
+.effect-negative {
+  filter: invert(1);
+  transition: filter 2s ease;
+}
+
+.effect-grayscale {
+  filter: grayscale(1);
+  transition: filter 1s ease;
+}
+
+.effect-normal {
+  filter: none;
+  transition: filter 1s ease;
+}
+
+.bg {
+  background: #ff00ff !important;
+  transition: background 0.5s ease;
+} 
+.bg-grey {
+  background: #555 !important; /* Neutral grey tone */
+  transition: background 0.3s ease;
+}
+
+/* Flicker Animation */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  10% { opacity: 0.8; }
+  20% { opacity: 1; }
+  30% { opacity: 0.9; }
+  40% { opacity: 1; }
+  50% { opacity: 0.85; }
+  60% { opacity: 1; }
+  70% { opacity: 0.95; }
+  80% { opacity: 1; }
+  90% { opacity: 0.9; }
+}
+
+.flicker {
+  animation: flicker 2s ease-in-out;
+}
