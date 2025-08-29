@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="m-2 p-2">position</h1>
+    <div class="m-4 p-1 relative w-1/2 h-40 bg-red-400">
+        <p>reletive</p>
+        <div class="absolute  bottom-0 right-0 bg-teal-500 p-4">absolute</div>
+    </div>
+    <div class="m-4 p-1 relative w-1/2 h-40 bg-red-400">
+        <p>reletive</p>
+        <div class="absolute left-0 top-0 bg-teal-500 p-4">absolute</div>
+    </div>
+
+    <div class="m-4 p-1 relative w-1/2 h-40 bg-red-400">
+        <p>reletive</p>
+        <div class="absolute right-0 top-0 bg-teal-500 p-4">absolute </div>
+    </div>
+   
+    <div class="m-4 p-1 relative w-1/2 h-40 bg-red-400">
+        <p>reletive</p>
+        <div class="absolute left-0 bottom-0 bg-teal-500 p-4">absolute</div>
+    </div>
+<h1 class="mb-10 p-10">display</h1>
+<div class="bg-violet-100 p-10 mb-10 w-[600px]">
+    <span class="inline">1.this is dispaly inline and will wrap normal</span>
+    <span class="inline-block  bg-red-200 w-[200px] h-[100px]">2.this is dispaly inline-block and will not extend beyond its parent</span>
+
+    <span class="block">3.this is dispaly and will move on it's own line</span>
+    <span class="hidden">4.this is dispaly none and will not  dispaly at all</span>
+</div>
+</body>
+
+</html>
